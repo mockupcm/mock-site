@@ -148,7 +148,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(twinkling.png);
+    background-image: url();
     top: -100px;
     transform: rotate(180deg);
     animation: lightining 4s linear infinite;
