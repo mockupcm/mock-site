@@ -6,8 +6,36 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-    <div class="rain"></div>
-    <div class="lightining"></div>
+<script>
+		(function () {
+			var sparkle = new Sparkle();
+			sparkle.init('#wrapper');
+		})();
+</script>
+        var settings = {
+
+	/* number of stars */
+	totalStars: 8,
+
+	verticalSlot: {
+		start: 0,
+		end: null
+	},
+
+	leftSlot: {
+		start: 0,
+		end: null
+	},
+
+	rightSlot: {
+		start: null,
+		end: null
+	},
+
+	/* image */
+	starPng: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAQAAACR313BAAAAS0lEQVQYGZXBQRGAIABFwVeCJBIG00AbwkgRKfE8c/kz7sLBQmIlsZE4SJwkPiRuTharze50udXX5XR4e1k4uUlcJE4SO4mNxIs/PsnOKsJwHzXnAAAAAElFTkSuQmCC'
+
+};
         <main>
             <script>
                 function audioPlay() {
