@@ -1,5 +1,5 @@
 var colour="red";
-		var sparkles=30;
+		var sparkles=50;
 		var x=ox=400;
 		var y=oy=300;
 		var swide=800;
@@ -62,7 +62,7 @@ var colour="red";
 		}
 
 		function update_star(i) {
-		  if (--starv[i]==25) star[i].style.clip="rect(2px, 3px, 3px, 2px)";
+		  if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
 		  if (starv[i]) {
 		    stary[i]+=1+Math.random()*3;
 		    starx[i]+=(i%5-2)/5;
@@ -80,8 +80,8 @@ var colour="red";
 		    tinyv[i]=50;
 		    tiny[i].style.top=(tinyy[i]=stary[i])+"px";
 		    tiny[i].style.left=(tinyx[i]=starx[i])+"px";
-		    tiny[i].style.width="1px";
-		    tiny[i].style.height="3px";
+		    tiny[i].style.width="2px";
+		    tiny[i].style.height="2px";
 		    tiny[i].style.backgroundColor=star[i].childNodes[0].style.backgroundColor;
 		    star[i].style.visibility="hidden";
 		    tiny[i].style.visibility="visible"
@@ -89,8 +89,8 @@ var colour="red";
 		}
 		function update_tiny(i) {
 		  if (--tinyv[i]==25) {
-		    tiny[i].style.width="2x";
-		    tiny[i].style.height="3px";
+		    tiny[i].style.width="1px";
+		    tiny[i].style.height="1px";
 		  }
 		  if (tinyv[i]) {
 		    tinyy[i]+=1+Math.random()*3;
